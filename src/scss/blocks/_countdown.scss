@@ -1,0 +1,13 @@
+.countdown {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    padding: 335px 0 90px 0;
+    height: 603px;
+    background-color: var(--very-dark);
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -1,0 +1,28 @@
+@import 'base/libs';
+@import 'base/fonts';
+@import 'base/vars';
+@import 'base/animation';
+
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    position: relative;
+    background-color: #FAFAFA;
+}
+
+.container {
+    position: relative;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+@import 'blocks/promo';
+@import 'blocks/title';
+@import 'blocks/btns';
+@import 'blocks/circle';
+@import 'blocks/cards';
+@import 'blocks/countdown';
+@import 'blocks/timer';
+@import 'blocks/media';

@@ -1,0 +1,36 @@
+.btn {
+    padding: 14px 41px;
+    background: #5175FF;
+    box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+    border: none;
+    border-radius: 28px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-top: 32px;
+    transition: all .3s;
+    &:hover {
+        background-color: var(--main-color-hover);
+    }
+    &_card {
+        background-color: var(--main-color-hover);
+        &:hover {
+            background: #5175FF;
+        }
+    }
+    &_pro {
+        background-color: #fff;
+        color: #5175FF;
+        &:hover {
+            background-color: #fff;
+            color: #829CFF;
+        }
+    }
+    &_noshodow {
+        box-shadow: none;
+        &:hover {
+            background-color: var(--main-color-hover);
+        }
+    }
+}

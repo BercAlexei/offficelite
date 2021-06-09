@@ -1,0 +1,47 @@
+.timer {
+    &__wrapper {
+        margin-top: 32px;
+        display: flex;
+    }
+    &__deadline {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        span {
+            color: var(--main-color);
+        }
+    }
+    &__item {
+        width: 100px;
+        height: 128px;
+        background: var(--dark);
+        border-radius: 13px;
+        margin-right: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: center;
+        color: rgba($color: #fff, $alpha: .5);
+        mix-blend-mode: normal;
+        span {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 48px;
+            color: #FFFFFF;
+            margin-bottom: 3px;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

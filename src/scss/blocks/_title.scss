@@ -1,0 +1,17 @@
+.title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    color: var(--dark);
+    &_fz20 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    &_white {
+        color: white;
+    }
+    &_mt35 {
+        color: white;
+        margin-top: 35px;
+    }
+}
