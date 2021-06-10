@@ -95,46 +95,14 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_circleProgressBar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/circleProgressBar */ "./src/js/modules/circleProgressBar.js");
-/* harmony import */ var _modules_timer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/timer */ "./src/js/modules/timer.js");
-
-
+/* harmony import */ var _modules_timer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/timer */ "./src/js/modules/timer.js");
+ // import setProgressCircle from './modules/circleProgressBar'
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  Object(_modules_circleProgressBar__WEBPACK_IMPORTED_MODULE_0__["default"])();
-  Object(_modules_timer__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  // setProgressCircle();
+  Object(_modules_timer__WEBPACK_IMPORTED_MODULE_0__["default"])();
 });
-
-/***/ }),
-
-/***/ "./src/js/modules/circleProgressBar.js":
-/*!*********************************************!*\
-  !*** ./src/js/modules/circleProgressBar.js ***!
-  \*********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return setProgressCircle; });
-function setProgressCircle() {
-  var circle = document.querySelector('.promo__progress-ring-circle'),
-      radius = circle.r.baseVal.value,
-      circumference = 2 * Math.PI * radius,
-      persentVal = document.querySelector('.promo__stat-persent').innerHTML.match(/\d+/g);
-  circle.style.strokeDasharray = "".concat(circumference, " ").concat(circumference);
-  circle.style.strokeDashoffset = circumference;
-
-  function setProgress(persent) {
-    var offset = circumference - persent / 100 * circumference;
-    circle.style.strokeDashoffset = offset;
-  }
-
-  ;
-  setProgress(persentVal);
-}
-;
 
 /***/ }),
 
