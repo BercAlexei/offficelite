@@ -82,7 +82,7 @@
 
     .cards {
         bottom: 488px;
-        width: 690px;
+        width: 100%;
         &__wrapper {
             flex-direction: column;
         }
@@ -104,13 +104,6 @@
         &__descr {
             margin-top: 4px;
         }
-        &__include {
-            position: absolute;
-            margin: 0;
-            right: 110px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
     }
 
 
@@ -129,6 +122,131 @@
     }
 }
 
-@media (max-width: 767px) {}
+@media (max-width: 992px) and (min-width: 767px) {
 
-@media (max-width: 576px) {}
+    .card {
+        &__include {
+            position: absolute;
+            margin: 0;
+            right: 110px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+} 
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 690px;
+    }
+    .btn {
+        margin-top: 24px;
+    }
+
+    .circles {
+
+        &-countdown {
+            left: 50%;
+            bottom: 66px;
+            transform: translateX(-50%);
+            
+        }
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .promo {
+        min-height: 1684px;
+        padding: 50px 0;
+        &__wrapper {
+            margin-top: 90px;
+            flex-direction: column;
+        }
+        &__descr {
+            margin-top: 50px;
+            order:2;
+            text-align: center;
+        }
+        &__img {
+            max-width: 171px;
+        }
+    }
+
+
+    .circles {
+        width: 458px;
+        height: 458px;
+        top: -170px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .circle {
+        &_r356 {
+            width: 287px;
+            height: 287px;
+        }
+        &__r283 {
+            width: 228px;
+            height: 228px;
+        }
+    }
+
+    .cards {
+        bottom: 454px;
+        &__wrapper {
+            flex-direction: column;
+        }
+    }
+    .card {
+        width: 327px;
+        height: 508px;
+        margin-right: 0;
+        margin-bottom: 25px;
+        text-align: center;
+        padding: 48px;
+    }
+
+    .countdown {
+        height: 1248px;
+        padding: 894px 0 100px;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+
+    .container {
+        max-width: 300px;
+    }
+    .promo {
+        &__wrapper {
+            margin-top: 80px;
+        }
+    }
+    .card {
+        width: 300px;
+    }
+    .timer {
+        &__deadline {
+            span {
+                font-size: 20px;
+                line-height: 20px; 
+            }
+        }
+        &__wrapper {
+            justify-content: center;
+        }
+        &__item {
+            height: 100px;
+            width: 62px;
+            span {
+                font-size: 32px;
+                line-height: 32px;
+            }
+        }    
+        
+    }
+}
